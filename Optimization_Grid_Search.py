@@ -58,7 +58,7 @@ def visualize_results(file_path):
     #rotate the tick labels and set their alignment
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     ax.set_xlabel(f'Decay factor $\mu$')
-    ax.set_ylabel('Threshold $th$')
+    ax.set_ylabel('Threshold $\\tau$')
     
     plt.scatter(0.5*10-0.5,0.16*10, color='w', marker='x',s=100, label='Optimal parameters')
 

@@ -123,8 +123,10 @@ if __name__ == '__main__':
         plt.gca().axes.get_yaxis().set_visible(False)
         plt.gca().set_aspect('equal', adjustable='box')
         
+        #ticks font size
+        plt.xticks(fontsize=12)
         plt.tight_layout()
-        path_image = f'Images/Paper/shapes_group_{n}.png'
+        path_image = f'Images/Paper/Shapes.png'
         plt.savefig(path_image, dpi=600, bbox_inches='tight', pad_inches=0, transparent=False)
-        plt.show()
+        #plt.show()
         plt.clf()
